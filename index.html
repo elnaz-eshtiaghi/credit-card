@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit card</title>
+    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+    <link rel="stylesheet" href="assets/font/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <main class="d-flex align-items-end py-5">
+        <div class="container-fluid container-xxl">
+            <div class="row align-items-center pb-5">
+
+                <section class="col-12 col-md-4 bg-white mx-auto  rounded-3 px-3 py-5 position-relative">
+                    <!-- .....form.....  -->
+                    <div class="form py-5">
+                        <div class="row pt-5 text-capitalize mt-3">
+                            <label for="input1" class="text-muted">card number</label>
+                            <div id="_input1" class="w-100 d-flex my-1">
+                                <input type="text" class="w-25 p-2 me-2 rounded-2 ">
+                                <input type="text" class="w-25 p-2 mx-2 rounded-2 ">
+                                <input type="text" class="w-25 p-2 mx-2 rounded-2 ">
+                                <input type="text" class="w-25 p-2 ms-2  me-3 rounded-2 ">
+
+                            </div>
+                            <label for="input2" class="text-muted mt-4">card holder</label>
+                            <div class="pe-4 my-1 " id="_input2">
+                                <input type="text" class="w-100 p-2 rounded-2 me-2">
+                            </div>
+                            <div class="d-flex justify-content-between mt-4 pe-3">
+                                <label for="input3" class="text-muted ">expiration date</label>
+                                <label for="input4" class="text-muted me-2">ccv</label>
+
+                            </div>
+                            <div class="w-100 d-flex justify-content-between my-1">
+                                <div class="col-9 " id="input3">
+                                    <select class="col-4 p-3 me-2 rounded-2 ">
+                                        <option value="month" disabled selected>month</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select class="col-4 p-3 mx-2 rounded-2 ">
+                                        <option value="year" disabled selected>year</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="col-3 " class=" d-flex justify-content-end" id="_input4">
+                                    <input type="text" class="col-11 p-2  rounded-2 ">
+                                </div>
+                            </div>
+                            <div class="col pe-3 my-4">
+                                <button class="col-12  rounded-3 p-2 me-3">submit</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <!-- .....card..... -->
+                    <div class="card position-absolute  overflow-hidden top-0 start-50 ">
+                        <div class="row position-relative w-100 h-100 m-0">
+                            <!-- ....front.... -->
+                            <div class="front h-100 w-100 top-0 start-0  ">
+                                <div class="row justify-content-center">
+                                    <div>
+                                        <div class="row col-12 align-items-center justify-content-between">
+                                            <figure class="col-5 overflow-hidden d-flex align-items-center">
+                                                <img src="assets/img/toppng.com-credit-card-3616x2362.png" alt=""
+                                                    class="col-6 ">
+                                                <i class="bi bi-caret-right-fill text-white"></i>
+                                            </figure>
+                                            <figure class="col-5 overflow-hidden d-flex justify-content-end">
+                                                <img src="assets/img/pngwing.com (87).png" alt="" class="col-6">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="information row justify-content-between">
+                                            <div class="inf1 col-11  mx-auto text-white mt-5 mb-4 d-flex">
+                                                <div class="mx-2"></div>
+                                                <div class="mx-2"></div>
+                                                <div class="mx-2"></div>
+                                                <div class="mx-2"></div>
+                                            </div>
+                                            <div class=" col-11  mx-auto ">
+                                                <div class="row  justify-content-between">
+                                                    <strong class=" d-flex col-6">card holder</strong>
+                                                    <strong class=" d-flex col-3">expires</strong>
+                                                </div>
+                                            </div>
+                                            <div class=" col-11  mx-auto text-white my-2">
+                                                <div class="row  justify-content-between">
+                                                    <div class="col-6">
+                                                        <span class=" d-flex "></span>
+
+                                                    </div>
+                                                    <div class="col-3 d-flex">
+                                                        <span class=" d-flex w-50"></span>
+                                                        <span class=" d-flex w-50 "></span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .....back..... -->
+                            <div class="back h-100 w-100 position-absolute top-0 start-0 ">
+                                <div class="row justify-content-center">
+                                    <div class="p-3 bg-black mt-5"></div>
+                                    <strong class="col-11 d-flex  my-2">cvv</strong>
+                                    <div class="_ccv col-11 bg-white rounded-2"></div>
+                                    <figure class="col-12 overflow-hidden ">
+                                        <img src="assets/img/pngwing.com (87).png" alt="" class="col-2 mt-5">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/javascript/master.js">
+
+    </script>
+</body>
+
+</html>
