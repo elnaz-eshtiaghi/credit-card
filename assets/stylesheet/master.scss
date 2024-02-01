@@ -1,0 +1,116 @@
+main {
+    background-image: radial-gradient(circle, #000000 , #011b2e 100%);
+    min-height: 100vh;
+}
+@font-face {
+    font-family:domine ;
+    src: url(../font/UnicaOne-Regular.ttf);
+}
+section {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.151);
+    font-family: domine;
+    text-transform: capitalize;
+    padding-top: 100px;
+    .card {
+        width: 400px;
+        height: 250px;
+        transition: 0.5s;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: none;
+        img {
+            object-fit: cover;
+            filter: drop-shadow(2px 2px 1px rgb(0, 0, 0));
+        }
+        
+        >.row>div {
+            border-radius: 20px;
+            background-image: linear-gradient(135deg, #182b36 5%, #192740);
+            overflow: hidden;
+            text-shadow: 2px 2px 1px black;
+            
+            &::after {
+                content: '';
+                background-image: url(../img/blue-world-mape-wallpaper-preview.jpg);
+                position: absolute;
+                background-size: cover;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.2;
+                border-radius: 20px;
+            }
+            >.row{
+                position: relative;
+                z-index: 2;
+            }
+            strong{
+                color: #708b9c;
+            }
+
+        }
+
+        .information {
+            >div {
+
+                &:nth-of-type(1) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .front {
+            z-index: 3;
+        }
+
+        .back {
+            transition: 1s;
+            opacity: 1;
+
+            >.row>div {
+                &:nth-of-type(2) {
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .form{
+        height: 400px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        input,select{
+            border: none;
+            font-size: 1rem;
+            outline: 1px solid #192740;
+            box-shadow:inset 0 0 5px 1px rgb(196, 196, 196);
+        }
+        select{
+            font-size: 0.7rem;
+        }
+        button{
+    background-color: #708b9c;
+    border: 1px solid #192740;
+    color: #192740;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 1px  5px gray;
+    transition: 1s;
+    &:hover{
+    box-shadow:inset 0 1px  5px rgb(243, 243, 243);
+    background-color: #192740;
+    border: 1px solid #708b9c;
+    color: #708b9c;
+
+    }
+
+        }
+        #input1{
+            width: 100%;
+            input{
+                width: 10%;
+            }
+        }
+    }
+
+}
