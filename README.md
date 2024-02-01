@@ -9,7 +9,7 @@
 
 - Created - 2023
 
-- Technologies Used - Html , css , sass
+- Technologies Used - Html , css , sass , javascript , bootstrap
 
 - Hooks Used : useState 
 
